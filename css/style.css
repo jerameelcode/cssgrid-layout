@@ -1,0 +1,137 @@
+
+
+html {
+    font-style: normal;
+    font-family: Helvetica;
+}
+
+
+
+section{
+    margin: 10px;
+    height: 1000px;
+}
+
+.section-left {
+    float: left;
+    width: 23%;
+    height: max-content;
+    left: 0;
+    border: 1px solid #fd503c;
+    margin: 10px;
+    position: relative;
+    background-color: #fdc05e;
+}
+
+.section-right {
+    display: grid;
+    width: 70%;
+    float: right;
+    border: 1px solid #00fd0b;
+    margin: 10px;
+    position: relative;
+}
+
+section:first-child {
+    /*display: block;*/
+}
+
+.container {
+    height: 10000px;
+    margin: 10px;
+    border: 1px solid #990000;
+}
+.section-header {
+    border: 1px solid #007bff;
+    top: 50%;
+}
+
+.flag {
+    background-color: #990000;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    width: 103%;
+    left: -5px;
+    position: relative;
+}
+
+.flag::before {
+    border: 5px solid;
+    border-color: transparent #4b0000 #4b0000 transparent;
+    left: 0;
+    content: "";
+    position: absolute;
+    top: -10px;
+}
+
+.flag::after {
+    border: 5px solid;
+    border-color: transparent transparent #4b0000 #4b0000;
+    content: "";
+    right: 0;
+    top: -10px;
+    position: absolute;
+}
+
+p {
+    text-align: center;
+    font-style: italic;
+    font-size: 1em;
+}
+
+.help {
+    background-color: #fff7b9;
+    border: 2px solid #ffe78a;
+    padding: 10px;
+    width: 380px;
+    position: relative;
+    margin-left: 50%;
+
+}
+
+.help::before {
+    border: 14px solid;
+    border-color: transparent #ffe78a transparent transparent;
+    content: "";
+    left: -28px;
+    margin-top: -14px;
+    position: absolute;
+    top: 50%;
+}
+
+.help:hover {
+    background-color: #fdf18a;
+    color: #a01f00;
+}
+
+.profile {
+    float: left;
+    width: 20%;
+    top: 20px;
+    position: absolute;
+}
+
+.profile-img {
+    margin-right: auto;
+    margin-left: auto;
+}
+
+img#pro-image  {
+    height: 150px;
+    width: 110px;
+}
+
+footer {
+    float: bottom;
+    position: relative;
+    bottom: 0;
+    height: 40px;
+    width: 100%;
+    border: 1px solid #fd9100;
+}
+
+footer p {
+    text-align: center;
+}
+

@@ -1,0 +1,56 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background: gray;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: white;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+}
+
+.container {
+    display: grid;
+    grid-template-rows: repeat(4, 25vh);
+    grid-template-columns: 2fr 1fr 1fr;
+    grid-gap: .5em;
+    width: 100%;
+    justify-content: center;
+}
+
+.monkey {
+    grid-area: 1/1/3/2;
+    background: rgb(255, 153, 0);
+}
+
+.swan { 
+    grid-area: 3/1/5/2;
+    background: rgb(255, 153, 0);
+}
+
+.eagle {
+    grid-area: 1/2/3/0;
+    background: rgb(255, 153, 0);
+}
+
+.bear {
+    grid-area: 1/3/2/4;
+    background: rgb(255, 153, 0);
+}
+
+.bird {
+    grid-area: 2/2/4/4;
+    background: rgb(255, 153, 0);
+}
+
+.elephant {
+    grid-area: 4/2/5/3;
+    background: rgb(255, 153, 0);
+}
+.owl {
+    grid-area: 4/3/5/4;
+    background: rgb(255, 153, 0);
+}

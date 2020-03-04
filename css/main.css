@@ -1,0 +1,127 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    line-height: 1.2em;
+    background-color: lightslategray;
+}
+
+
+.main {
+    display: grid;
+    grid-template-rows: 1fr 1fr 9fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr .8fr;
+    grid-column-gap: 1px;
+    grid-template-areas:
+            'header header header header'
+            'nav nav nav aside'
+            'section section section aside'
+            'section section section footer';
+}
+
+.header {
+    display: flex;
+    justify-content: center;
+    grid-area: header;
+    background-color: rgba(20, 32, 64, 0.82);
+}
+
+.nav {
+    grid-area: nav;
+    background-color: #ebfdad;
+    text-align: center;
+}
+
+.aside {
+    grid-area: aside;
+    background-color: #fdd92b;
+    text-align: center;
+}
+
+.section {
+    grid-area: section;
+    background-color: #fdb1d2;
+    text-align: center;
+}
+
+.footer {
+    grid-area: footer;
+    background-color: #fd896d;
+    text-align: center;
+}
+
+.nav {
+    display: flex;
+    justify-content: left;
+    background-color: #4b0000;
+    font-family: Angelina;
+    font-size: 1.5em;
+}
+
+.nav-item {
+    display: flex;
+    align-items: center;
+    color: #fff8f3;
+    text-decoration: none;
+    padding-right: 1em;
+    padding-left: 1vh;
+    border-right: 2px dotted;
+    border-radius: 50%;
+}
+
+.h-center {
+    display: flex;
+    align-items: center;
+}
+
+.v-center {
+    justify-content: center;
+}
+
+.h2 {
+    font-family: "Toyota MR2";
+}
+
+@media screen and (max-width: 768px) {
+    body {
+        background-color: #cdcdcd
+    }
+    .main {
+        grid-template-areas: 'header header' 'nav nav' 'section aside' 'section aside' 'footer aside';
+        grid-template-rows: 10vh 10vh 60vh 10vh 10vh;
+        grid-template-columns: 3fr 1fr;
+    }
+    .page-header {
+        display: grid;
+        grid-area: aside;
+        font-size: 1vh;
+    }
+}
+
+@media screen and (max-width: 360px) {
+    body {
+        background-color: #cdcdcd
+    }
+    .main {
+        grid-template-areas: 'header' 'nav' 'section' 'aside' 'footer';
+        grid-template-rows: 10vh 10vh 60vh 10vh 10vh;
+        grid-template-columns: 1fr;
+    }
+    .page-header {
+        display: grid;
+        grid-area: aside;
+        font-size: 1vh;
+    }
+
+}
+
+.page-header {
+    text-align: center;
+    font-family: "Toyota MR2", "Corsiva Hebrew";
+    font-size: 3vh;
+    color: #fff8f3;
+    top: 1.5em;
+    margin: 1em;
+}

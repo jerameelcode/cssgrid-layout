@@ -1,0 +1,83 @@
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+h1 {
+    margin-top: 3em;
+    margin-bottom: 2em;
+    font-size: 2.3em;
+}
+
+.image {
+    width: 10em;
+    height: 13em;
+    border: .2em dashed rgb(79, 91, 92);
+    border-radius: 1em;
+    display: grid;
+}
+
+
+.message {
+    border: .08rem solid black;
+    border-radius: .2rem;
+    background: rgb(197, 173, 163);
+}
+
+.message.error {
+    background: #ff9495;
+    color: #fff
+}
+
+.error {
+    border-color: #fc0;
+    background: #ff0
+}
+
+.article {
+    margin: 1em;
+    background: #ffe7d4;
+    border: .1rem solid #000;
+    border-radius: 1em;
+    display: grid;
+    justify-content: center;
+}
+
+.page-text {
+    margin: 0 0 1em;
+    font-family: 'Lucida Sans', Geneva, Verdana, sans-serif;
+    padding: .5em;
+    text-align: justify;
+    line-height: 1.3em;
+    text-indent: 2em;
+    color: #2c3656;
+}
+
+.header {
+    font-family: "Toyota MR2";
+    color: #040717;
+}
+
+.page-content {
+    display: grid;
+    justify-items: center;
+    margin: 1em;
+}
+
+.text-center {
+    text-align: center ! important;
+}
+
+.center {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.left {
+    margin-right: auto;
+}
+
+.right {
+    margin-left: auto;
+}
